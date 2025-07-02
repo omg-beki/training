@@ -6,7 +6,7 @@ def LongestWord(sen):
       longest += word
     else:
       longest += " "
-  sen = max(longest.split())
+  sen = max(longest.split(), key=len)
   return sen
 
 print(LongestWord(input()))
